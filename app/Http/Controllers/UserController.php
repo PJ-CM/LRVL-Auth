@@ -18,9 +18,14 @@ class UserController extends Controller
     public function __construct()
     {
         //Un solo requerimiento
+        //  >> Requerimiento de estar antentificado
+        //  para poder acceder
         //-----------------------------------------
         //$this->middleware('auth');
         //Varios requerimientos
+        //  >> Requerimiento de haber verificado
+        //  el email empleado en el registro de usuario
+        //  para poder acceder
         //-----------------------------------------
         ////$this->middleware('auth');
         ////$this->middleware('verified');
